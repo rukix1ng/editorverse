@@ -66,14 +66,8 @@ export function Editor() {
       </div>
       <div className="flex-1 min-h-0 overflow-hidden">
         {activeTab?.type === 'new' ? (
-          <div className="h-full grid place-items-center bg-gradient-to-br from-slate-50 via-white to-indigo-50/30 dark:from-slate-950 dark:via-slate-900 dark:to-indigo-950/20 relative overflow-hidden">
-            {/* 装饰性背景元素 */}
-            <div className="absolute inset-0 opacity-30 dark:opacity-10">
-              <div className="absolute top-20 left-20 w-72 h-72 bg-indigo-200 dark:bg-indigo-900 rounded-full blur-3xl" />
-              <div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-200 dark:bg-purple-900 rounded-full blur-3xl" />
-            </div>
-            
-            <div className="relative z-10 text-center">
+          <div className="h-full grid place-items-center bg-white dark:bg-slate-950 relative overflow-hidden">
+            <div className="text-center">
               <h2 className="text-slate-900 dark:text-white text-xl font-semibold">新标签页</h2>
               <div className="mt-4 space-y-2 text-sm">
                 <a className="block text-indigo-600 dark:text-indigo-400 hover:underline hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors cursor-pointer">
